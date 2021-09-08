@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.d-flex {
+    input {
+        margin: 1rem 0rem;
+    }
+    button {
+        margin: 1.5rem .6rem;
+        padding: .3rem 2.4rem;
+    }
+}
+
+.container {
+    table {
+        margin: 1rem 10rem;
+        .btn-edit {
+            color: green;
+            cursor: pointer;
+        }
+        .btn-delete {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
