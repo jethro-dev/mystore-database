@@ -25,12 +25,13 @@ function bulkCreate(dbtable, data) {
 function empty(object) {
     let flag = false;
 
-    //debug only price input also validate
+
     for (let value in object) {
         if (object[value] != "" && object.hasOwnProperty(value)) {
             flag = true;
         } else {
             flag = false;
+            return flag;
         }
     }
     return flag;
