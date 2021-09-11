@@ -29,11 +29,11 @@
 }
 
 body {
-  background: #485563;
+  background: #757F9A;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#29323c), to(#485563));
-  background: linear-gradient(to right, #29323c, #485563);
+  background: -webkit-gradient(linear, left top, right top, from(#D7DDE8), to(#757F9A));
+  background: linear-gradient(to right, #D7DDE8, #757F9A);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: -webkit-box;
   display: -ms-flexbox;
