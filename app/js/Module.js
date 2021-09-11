@@ -37,7 +37,47 @@ function empty(object) {
     return flag;
 }
 
+// Get data from database
+function getData(dbtable, fn) {
+    let index = 0;
+    let obj = {};
+    dbtable.count(count => {
+        if (count) {
+            dbtable.each(table => {
+                obj = sortObj(table)
+                fn(obj, index++)
+            })
+        } else {
+            fn(0)
+        }
+    })
+}
+
+// Sort data obj
+function sortObj(sortObj) {
+    let obj = {};
+    obj = {
+        id: sortObj.id,
+        name: sortObj.name,
+        seller: sortObj.seller,
+        price: sortObj.price
+    }
+
+    return obj
+}
+
+//Create dynamic element
+function createElement(tagname, appendTo, fn) {
+    const element = document.createElement(tagname);
+    if (appendTo) appendTo.appendChild(element);
+    if (fn) fn(element);
+
+}
+
 export default productDb
 export {
-    bulkCreate
+    bulkCreate,
+    getData,
+    createElement,
+    sortObj
 }
