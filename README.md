@@ -1,4 +1,4 @@
-# myStore Database
+# myStore database
 ## Welcome! 👋
 This is myStore Database. MyStore Database is a web application with CRUD opertaions.
 
