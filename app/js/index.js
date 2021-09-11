@@ -22,6 +22,7 @@ const btnRead = document.querySelector('#btn-read');
 const btnDelete = document.querySelector('#btn-delete');
 
 
+
 // Insert value using Create button
 // btnCreate.addEventListener('click', bulkCreate(db.products, {
 //     name: productName.ariaValueMax,
@@ -107,6 +108,8 @@ function table() {
                 })
 
             })
+        } else {
+            notfound.textContent = "No record found in the database"
         }
     })
 
